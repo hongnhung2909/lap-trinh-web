@@ -1,0 +1,9 @@
+NGÔ THỊ HỒNG NHUNG
+22CTMĐT01
+22001909
+4 Lấy ra danh sách người dùng trong đó email người dùng là Gmail (ví dụ:
+example@gmail.com), trong đó Tên khách hàng có chữ i hoặc kết thúc bằngchữm, sắp thứ tự email theo Alphabet(A->Z). Thông tin hiển thị gồm: Mã kháchhàng, Tên khách hàng, Email.
+SELECT user_id, user_name, user_email
+FROM users
+WHERE user_email LIKE '%@gmail.com%' AND (user_name LIKE '%i%' OR user_name LIKE '%m')
+ORDER BY user_email ASC;
